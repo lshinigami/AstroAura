@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body
+{
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-image: linear-gradient(#283E51, #0A2342);
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+	
+}
+
+header img
+{
+	text-decoration: none;
+	height: 8vh;
+	
+}
+
+header ul
+{
+	display: flex;
+	justify-content:  center;
+	align-items: center;
+	
+}
+
+header ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+	
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+	background: #fff;
+	color: #2b1055;
+	
+}
+
+section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 211px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-content: space-between;
+	overflow: hidden;
+}
+
+section::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	backgound: linear-gradient(to top, #1c0522, transparent);
+}
+
+section img#stars
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	pointer-events: none;
+}
+
+
+
+
+.beginning_text
+{
+	color: #fff;
+	font-size: 24px;
+}
+
+.leftimg 
+{
+    float:left;
+    margin: 10px 10px 0px 0;
+    width: 270px;
+    height: 270px;
+}
+
+#btn
+{
+	margin-left: 600px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background: #fff;
+	color: #2b1055;
+	font-size: 1.5em;
+	z-index: 10;
+	transform: translateY(100px);
+}
+
+#btn:hover 
+{
+	border: solid 1px white; 
+	background: none; 
+	color: white; 
+	transition: 0.8s;
+}
+
+
+
+
+.card 
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin-bottom: 130px;
+	color: #fff;
+	background: url('sun.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.card-content
+{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	padding: 20px;
+	background-color: #663399;
+	opacity: .9;
+	border-top-left-radius: 20px;
+	transform: translateY(70px);
+	transition: transform .25s;
+}
+
+.card-content::before
+{
+	content: '';
+	position: absolute;
+	top: -47px;
+	right: -45px;
+	width: 100px;
+	height: 100px;
+	transform: rotate(-175deg);
+	border-radius: 50%;
+	box-shadow: inset 48px 48px #663399;
+}
+
+.card-title
+{
+	color: #fff;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+.card-sub
+{
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.card-description
+{
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.card:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.card:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardMoon
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('moon.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardMoon:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardMoon:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+
+.cardMercury
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('mercury.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardMercury:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardMercury:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardVenus
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('venus.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardVenus:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardVenus:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardMars
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('mars.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardMars:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardMars:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardJupiter
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+
+	color: #fff;
+	background: url('jupiter.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardJupiter:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardJupiter:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardSaturn
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('saturn.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardSaturn:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardSaturn:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardUranus
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('uranus.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardUranus:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardUranus:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+.cardNeptune
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('neptune.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardNeptune:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardNeptune:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+
+.cardPluto
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #fff;
+	background: url('pluto.png') center no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cardPluto:hover .card-content
+{
+	transform: translateY(0);
+}
+
+.cardPluto:hover .card-description
+{
+	opacity: 1;
+	transition-delay: .25s;
+}

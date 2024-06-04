@@ -1,0 +1,140 @@
+HTML
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Planet</title>
+	<link rel="stylesheet" type="text/css" href="style_planet.css">
+</head>
+<body>
+	<header>
+		<img src="facebook.png"><a href="#" class="logo"></a>
+		<ul>
+			<li><a href="MAIN.html">Главная</a></li>
+			<li><a href="planet.html" class="active">Планеты</a></li>
+			<li><a href="#">Знаки Зодиака</a></li>
+			<li><a href="#">Стихии</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<img src="stars.png" id="stars">
+	</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+CSS
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body
+{
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-image: linear-gradient(#283E51, #0A2342);
+}
+
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+	
+}
+
+header img
+{
+	text-decoration: none;
+	height: 8vh;
+	
+}
+
+header ul
+{
+	display: flex;
+	justify-content:  center;
+	align-items: center;
+	
+}
+
+header ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+	
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+	background: #fff;
+	color: #2b1055;
+	
+}
+
+section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+section::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	backgound: linear-gradient(to top, #1c0522, transparent);
+}
+
+section img#stars
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	pointer-events: none;
+}

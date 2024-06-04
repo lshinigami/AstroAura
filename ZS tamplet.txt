@@ -1,0 +1,55 @@
+<div class="description" id="taurus">
+		<h2></h2>
+		<div class="image_text">
+			<img class="leftimg" src="taurus.png">
+			<p class="first_text"> </p>
+		</div>
+		<br>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul> 
+			<br> 
+			<br>
+		<p><b>ТЕМПЕРАМЕНТ И ХАРАКТЕР</b></p>
+		<p></p>
+			<br> 
+		<p></p>
+			<br>
+		<p></p>
+			<br> 
+		<p></p>
+			<br>
+			<br>
+		<p><b>ПРОФЕССИИ</b></p>
+		<p></p>
+			<br>
+		<p></p>
+			<br> 
+		<p></p>
+			<br>
+		<p></p>
+			<br> 
+		<p></p>
+			<br>
+			<br>
+		<p><b>ЛЮБОВЬ</b></p>
+		<p></p>
+			<br>
+		<p></p>
+			<br>
+		<p></p>
+			<br>
+		<p></p>
+			<br> 
+		<p></p>
+			
+	</div>
